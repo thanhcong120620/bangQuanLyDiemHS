@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="as2css.css">
+    <script src="as2js.js"></script>
+
+    <title>Assignment 2</title>
+</head>
+<body>
+
+    <h1>Mark Sheet</h1>
+
+<div id="form">
+    <div class="row">
+        <div class="left">Họ tên</div>
+        <div class="right">
+            <input type="text" name="" id="name">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">Điểm Toán</div>
+        <div class="right">
+            <input type="text" name="" id="diemtoan">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">Điểm Lý</div>
+        <div class="right">
+            <input type="text" name="" id="diemly">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">Điểm Hóa</div>
+        <div class="right">
+            <input type="text" name="" id="diemhoa">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">Tên lớp</div>
+        <div class="right">
+            <select id="lop">
+                <option value="Lớp 12/1">Lớp 12/1</option>
+                <option value="Lớp 12/2">Lớp 12/2</option>
+                <option value="Lớp 12/3">Lớp 12/3</option>
+                <option value="Lớp 12/4">Lớp 12/4</option>
+                <option value="Lớp 12/5">Lớp 12/5</option>
+                <option value="Lớp 12/6">Lớp 12/6</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    
+    <div class="rowbt">
+        <button id="btnhap" onclick="nhapbt()">Nhập</button>
+        <button id="capnhat" style="display:none;" onclick="capnhatbt()">Cập nhật</button>
+    </div>
+</div>
+
+
+<h2><i>Trường Trung học Phổ thông Hoàng Hoa Thám</i></h2>
+
+<table id="mytable">
+
+    <tr>
+        <th>STT</th>
+        <th>Họ tên</th>
+        <th>Lớp</th>
+        <th>Toán</th>
+        <th>Lý</th>
+        <th>Hóa</th>
+        <th>Trung bình</th>
+        <th>Thao tác</th>
+    </tr>
+    
+</table>
+
+
+
+
+<div class="nuttinh">
+    <button type="button" id="bttinhdiem" onclick="tinhdiembt()">Tính điểm trung bình</button>
+    <button type="button" id="btxacdinh" onclick="xacdinhbt()">Xác định học sinh giỏi</button>
+    <button type="button" id="nutin" onclick="window.print()">In ra</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
